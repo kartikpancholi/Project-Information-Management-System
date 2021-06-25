@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="750.0" style="-fx-background-color: #94b8b8;" xmlns="http://javafx.com/javafx/8.0.999-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StudentForm2.StudentForm2">
+   <children>
+      <Label layoutX="334.0" layoutY="42.0" text="FORM" textFill="WHITE" AnchorPane.topAnchor="25.0">
+         <font>
+            <Font size="30.0" />
+         </font></Label>
+      <VBox layoutX="101.0" layoutY="112.0" prefHeight="470.0" prefWidth="550.0" style="-fx-background-color: #003366; -fx-border-color: black; -fx-border-width: 3px;" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="95.0">
+         <children>
+            <AnchorPane prefHeight="470.0" prefWidth="550.0" style="-fx-background-color: #527a7a;">
+               <children>
+                  <Label layoutX="80.0" layoutY="80.0" text="Guide" textFill="WHITE" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="80.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="guide" layoutX="264.0" layoutY="80.0" onAction="#setProjectTitles" prefWidth="200.0" promptText="Select Guide" style="-fx-background-color: #527a7a; -fx-border-color: black; -fx-prompt-text-fill: white; -fx-text-fill: white" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="80.0" />
+                  <Label layoutX="80.0" layoutY="130.0" text="Project Title" textFill="WHITE" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="130.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="pTitle" layoutX="264.0" layoutY="131.0" prefWidth="200.0" promptText="Select Title" style="-fx-background-color: #527a7a; -fx-border-color: black;" AnchorPane.rightAnchor="80.0" />
+                  <Label layoutX="80.0" layoutY="180.0" text="Funding Agency" textFill="WHITE" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="180.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="80.0" layoutY="230.0" text="Total Amount" textFill="WHITE" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="230.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="totalAmount" layoutX="264.0" layoutY="230.0" prefWidth="200.0" promptText="0" style="-fx-background-color: #527a7a; -fx-border-color: black;" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="230.0" />
+                  <Button layoutX="224.0" layoutY="429.0" mnemonicParsing="false" onAction="#onSubmit" prefHeight="30.0" prefWidth="80.0" text="Submit" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="240.0" AnchorPane.topAnchor="420.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Button>
+                  <TextField fx:id="permAmount" layoutX="264.0" layoutY="282.0" prefWidth="200.0" promptText="0" style="-fx-background-color: #527a7a; -fx-border-color: black;" />
+                  <Label layoutX="80.0" layoutY="286.0" text="Permitted Amount" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="fundingAgency" layoutX="264.0" layoutY="178.0" prefHeight="26.0" prefWidth="200.0" promptText="Select Agency" style="-fx-background-color: #527a7a; -fx-border-color: #000;" />
+               </children>
+            </AnchorPane>
+         </children></VBox>
+   </children>
+</AnchorPane>

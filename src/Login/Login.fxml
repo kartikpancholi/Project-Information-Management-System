@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="750.0" style="-fx-background-color: #94b8b8;" xmlns="http://javafx.com/javafx/8.0.999-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login.Login">
+    <children>
+        <VBox layoutX="325.0" layoutY="200.0" prefHeight="269.0" prefWidth="350.0" style="-fx-background-color: #527a7a; -fx-border-color: black; -fx-border-width: 3px;" AnchorPane.bottomAnchor="129.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="200.0">
+            <children>
+                <AnchorPane prefHeight="274.0" prefWidth="344.0" style="-fx-background-color: #527a7a;">
+                    <children>
+                        <Label layoutX="161.0" layoutY="14.0" text="LOG IN" textFill="WHITE" AnchorPane.leftAnchor="132.0" AnchorPane.rightAnchor="132.0" AnchorPane.topAnchor="20.0">
+                            <font>
+                                <Font size="24.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="30.0" layoutY="74.0" text="Username" textFill="WHITE" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="80.0">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="30.0" layoutY="112.0" text="Password" textFill="WHITE" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="130.0">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="email_id" layoutX="137.0" layoutY="71.0" promptText="Username" style="-fx-background-color: #527a7a; -fx-border-color: black; -fx-text-inner-color: white;" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="80.0">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </TextField>
+                        <PasswordField fx:id="pass" layoutX="137.0" layoutY="109.0" promptText="Password" style="-fx-background-color: #527a7a; -fx-border-color: black; -fx-text-inner-color: white;" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="130.0">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </PasswordField>
+                        <Button contentDisplay="CENTER" layoutX="146.0" layoutY="189.0" mnemonicParsing="false" onAction="#onSubmit" prefHeight="28.0" prefWidth="70.0" text="Submit" AnchorPane.bottomAnchor="57.0" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="140.0" AnchorPane.topAnchor="180.0">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                        <Hyperlink fx:id="link" layoutX="143.0" layoutY="214.0" onAction="#openRegistrationForm" text="Don't have an account? Register" AnchorPane.leftAnchor="67.0" AnchorPane.rightAnchor="67.0" AnchorPane.topAnchor="230.0">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Hyperlink>
+                    </children>
+                </AnchorPane>
+            </children>
+        </VBox>
+        <Text fill="WHITE" fontSmoothingType="LCD" layoutX="31.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PROJECT INFORMATION MANAGEMENT SYSTEM" textAlignment="CENTER" wrappingWidth="688.931640625" AnchorPane.topAnchor="82.626953125">
+            <font>
+                <Font size="30.0" />
+            </font>
+        </Text>
+    </children>
+</AnchorPane>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="750.0" style="-fx-background-color: #94b8b8;" xmlns="http://javafx.com/javafx/8.0.999-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Register.Register">
+   <children>
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="31.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PROJECT INFORMATION MANAGEMENT SYSTEM" textAlignment="CENTER" wrappingWidth="688.931640625" AnchorPane.leftAnchor="31.0" AnchorPane.rightAnchor="30.068359375" AnchorPane.topAnchor="50.626953125">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <VBox layoutX="190.0" layoutY="124.0" prefHeight="418.0" prefWidth="370.0" style="-fx-border-color: black; -fx-border-width: 3px;" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="190.0" AnchorPane.rightAnchor="190.0" AnchorPane.topAnchor="120.0">
+         <children>
+            <AnchorPane prefHeight="425.0" prefWidth="364.0" style="-fx-background-color: #527a7a;" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label layoutX="161.0" layoutY="26.0" text="REGISTER" textFill="WHITE" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="130.0" AnchorPane.topAnchor="20.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="66.0" layoutY="79.0" text="Name" textFill="WHITE" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="80.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="30.0" layoutY="173.0" text="Password" textFill="WHITE" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="180.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="41.0" layoutY="125.0" text="Email-ID" textFill="WHITE" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="130.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="30.0" layoutY="218.0" text="Department" textFill="WHITE" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="230.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="30.0" layoutY="267.0" text="Designation" textFill="WHITE" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="280.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="name" layoutX="156.0" layoutY="80.0" promptText="Name" style="-fx-background-color: #527a7a; -fx-border-color: black; -fx-text-inner-color: white;" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="80.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="email_id" layoutX="145.0" layoutY="126.0" promptText="Email" style="-fx-background-color: #527a7a; -fx-border-color: black; -fx-text-inner-color: white;" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="130.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="pass" layoutX="145.0" layoutY="172.0" promptText="Password" style="-fx-background-color: #527a7a; -fx-border-color: black; -fx-text-inner-color: white;" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="180.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </PasswordField>
+                  <ComboBox fx:id="designation_id" layoutX="167.0" layoutY="278.0" prefHeight="32.0" prefWidth="170.0" promptText="Select" style="-fx-background-color: #527a7a; -fx-border-color: black; -fx-text-inner-color: white;" AnchorPane.leftAnchor="167.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="278.0" />
+                  <Button layoutX="144.0" layoutY="322.0" mnemonicParsing="false" onAction="#onSubmit" prefHeight="28.0" prefWidth="70.0" text="Submit" AnchorPane.bottomAnchor="53.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Hyperlink layoutX="144.0" layoutY="357.0" onAction="#openLoginForm" text="Already have an account? Log In" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="75.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Hyperlink>
+                  <ChoiceBox fx:id="dept_id" layoutX="167.0" layoutY="228.0" prefHeight="32.0" prefWidth="177.0" style="-fx-background-color: #527a7a; -fx-border-color: black;" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
